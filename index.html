@@ -1,0 +1,1676 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NAVER Careers</title>
+  <meta name="description" content="NAVER Careers 클론코딩 사이트입니다.">
+  <meta name="author" content="강승연">
+  <meta property="og:title" content="NAVER Careers">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="assets/images/og.webp">
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./assets/js/main.js" defer></script>
+</head>
+<body>
+  <div class="wrap"> 
+    <header id="header">
+      <div class="header-inner">
+        <h1 class="logo-inner">
+          <a href="#" class="logo">
+            <span class="blind">NAVER Careers</span>
+          </a>
+        </h1>
+        <nav class="nav-left">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#" class="item">
+                <span class="title">Teams</span>
+              </a>
+              <ul class="sub-list">
+                <li class="sub-item">
+                  <a href="#" class="subitem">
+                    <span class="sub-title">Tech</span>
+                  </a>
+                </li>
+                <li class="sub-item">
+                  <a href="#" class="subitem">
+                    <span class="sub-title">Design</span>
+                  </a>
+                </li>
+                <li class="sub-item">
+                  <a href="#" class="subitem">
+                    <span class="sub-title">Service & Business</span>
+                  </a>
+                </li>
+                <li class="sub-item">
+                  <a href="#" class="subitem">
+                    <span class="sub-title">Corporate</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="item">
+                <span class="title">People</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="item">
+                <span class="title">Benefits</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="item">
+                <span class="title">Culture</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="item">
+                <span class="title">Value</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="nav-right">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#" class="item">
+                <span class="title">Jobs</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="item">
+                <span class="title">Login</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="item">
+                <span class="title">FAQ</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="item">
+                KR
+                <i class="icon-arrow"></i>
+              </a>
+              <ul class="lang-list">
+                <li class="lang-item">
+                  <a href="#" class="en">EN</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <nav class="nav-toggle">
+          <button class="btn-toggle"></button>
+          <button class="btn-close"></button>
+        </nav>
+        <nav class="side-nav">
+          <ul class="gnb-list">
+            <li class="gnb-item">
+              <a href="#" class="title gnb-title">
+                <span class="text">Teams</span>
+                <i class="icon-down-arrow"></i>
+              </a>
+              <ul class="lnb-list">
+                <li class="lnb-item">
+                  <a href="#" class="lnb-title">
+                    <span class="text">Tech</span>
+                  </a>
+                </li>
+                <li class="lnb-item">
+                  <a href="#" class="lnb-title">
+                    <span class="text">Design</span>
+                  </a>
+                </li>
+                <li class="lnb-item">
+                  <a href="#" class="lnb-title">
+                    <span class="text">Service & Business</span>
+                  </a>
+                </li>
+                <li class="lnb-item">
+                  <a href="#" class="lnb-title">
+                    <span class="text">Corporate</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="gnb-item">
+              <a href="#" class="title">
+                <span class="text">People</span>
+              </a>
+            </li>
+            <li class="gnb-item">
+              <a href="#" class="title">
+                <span class="text">Benefits</span>
+              </a>
+            </li>
+            <li class="gnb-item">
+              <a href="#" class="title">
+                <span class="text">Culture</span>
+              </a>
+            </li>
+            <li class="gnb-item">
+              <a href="#" class="title">
+                <span class="text">Value</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="gnb-list">
+            <li class="gnb-item">
+              <a href="#" class="title">
+                <span class="text">Jobs</span>
+              </a>
+            </li>
+            <li class="gnb-item">
+              <a href="#" class="title">
+                <span class="text">Login</span>
+              </a>
+            </li>
+            <li class="gnb-item">
+              <a href="#" class="title">
+                <span class="text">FAQ</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="gnb-list gnb-lang">
+            <li class="gnb-item active">
+              <a href="#" class="title">
+                <span class="text">KR</span>
+              </a>
+            </li>
+            <li class="gnb-item">
+              <a href="#" class="title">
+                <span class="text">EN</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="container">
+      <section class="sc-visual">
+        <div class="group-slide swiper">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <a href="#" class="slide">
+                <div class="img-area">
+                  <video class="spot-item" autoplay muted playsinline loop>
+                    <source src="https://recruit.pstatic.net/cdn-vod/naver/Joker.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="text-area">
+                  <p class="visual-text">
+                    Board
+                    <br class="m-block">
+                    the Navership
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#" class="slide">
+                <div class="img-area">
+                  <video class="spot-item" autoplay muted playsinline loop>
+                    <source src="https://recruit.pstatic.net/cdn-vod/naver/Bram.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="text-area">
+                  <p class="visual-text">
+                    Navigate
+                    <br class="m-block">
+                    New Horizons
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#" class="slide">
+                <div class="img-area">
+                  <video class="spot-item" autoplay="" muted="" playsinline="" loop="">
+                    <source src="https://recruit.pstatic.net/cdn-vod/naver/Yann_Bastard.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="text-area">
+                  <p class="visual-text">
+                    Board
+                    <br class="m-block">
+                    the Navership
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#" class="slide">
+                <div class="img-area">
+                  <video class="spot-item" autoplay="" muted="" playsinline="" loop="">
+                    <source src="https://recruit.pstatic.net/cdn-vod/naver/Joker.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="text-area">
+                  <p class="visual-text">
+                    Navigate
+                    <br class="m-block">
+                     New Horizons
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#" class="slide">
+                <div class="img-area">
+                  <video class="spot-item" autoplay="" muted="" playsinline="" loop="">
+                    <source src="https://recruit.pstatic.net/cdn-vod/naver/Bram.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="text-area">
+                  <p class="visual-text">
+                    Board
+                    <br class="m-block">
+                    the Navership
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#" class="slide">
+                <div class="img-area">
+                  <video class="spot-item" autoplay="" muted="" playsinline="" loop="">
+                    <source src="https://recruit.pstatic.net/cdn-vod/naver/Yann_Bastard.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="text-area">
+                  <p class="visual-text">
+                    Navigate
+                    <br class="m-block">
+                    New Horizons
+                  </p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="sc-search">
+        <h2 class="blind">search-form, teams</h2>
+        <div class="inner">
+          <div class="group-head">
+            <h3 class="headline">Teams</h3>
+            <p class="sub-title">서로 다른 사람들이 모여 한 방향으로 나아갑니다</p>
+            <a href="#" class="btn-more">Learn more</a>
+          </div>
+          <div class="group-input">
+            <form name="search-form" action="" method="get" id="search-form" class="search-form">
+              <div class="form-wrap">
+                <div class="icon-area">
+                  <i class="icon-search">
+                    <span class="blind">검색 아이콘</span>
+                  </i>
+                </div>
+                <div class="input-area">
+                  <label for="keyword" class="search-label">키워드</label>
+                  <input id="keyword" class="search-input" type="text" placeholder="프론트엔드 개발자">
+                </div>
+                <div class="select-area">
+                  <span class="select-text">법인</span>
+                  <div class="select-inner">
+                    <select name="jobSelect" class="select-box box1" onchange>
+                      <option value disabled selected>법인선택</option>
+                      <option value="KR">NAVER</option>
+                      <option value="NB">NAVER Cloud</option>
+                      <option value="SN">SNOW</option>
+                      <option value="NL">NAVER LABS</option>
+                      <option value="NW">NAVER WEBTOON</option>
+                      <option value="NF">NAVER FINANCIAL</option>
+                      <option value="NI">NAVER I&S</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="select-area">
+                  <span class="select-text">직군</span>
+                  <div class="select-inner">
+                    <select name="jobSelect" class="select-box box2" onchange>
+                      <option value disabled selected>직군선택</option>
+                      <option value="TE">Tech</option>
+                      <option value="DE">Design</option>
+                      <option value="SB">Service & Business</option>
+                      <option value="CO">Corporate</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="search-area">
+                  <button type="submit" class="search-btn">검색</button>
+                </div>
+              </div>
+              <div class="form-mob">
+                <button class="form-btn">Search Jobs</button>
+                <div class="form-search">
+                  <i class="icon-btn-search">
+                    <span class="blind">검색 아이콘</span>
+                  </i>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="group-input-mo">
+            <form name="search-form-mo" action="" method="get" id="search-form-mo" class="search-form-mo">
+              <button type="button" class="btn-close">
+                <span class="blind">닫기</span>
+              </button>
+              <div class="search-area">
+                <label for="search-input-mo"><span class="blind">Search Jobs</span></label>
+                <input id="search-input-mo" class="search-input" type="text" name="searchJobs" value="" placeholder="Search Jobs">
+                <button type="button" class="btn-search">
+                  <i class="icon-search"><span class="blind">검색 아이콘</span></i>
+                </button>
+              </div>
+              <div class="filter-area">
+                <div class="filter-box">
+                  <p class="title">직군/직무</p>
+                  <ul class="filter-list">
+                    <li class="item">
+                      <button class="filter-depth1">
+                        <i class="icon-arrow"></i>
+                        <span class="text">Tech</span>
+                      </button>
+                      <ul class="sub-list">
+                        <li class="item">
+                          <button class="filter-depth2 filter-select">
+                            <span class="text">전체</span>
+                          </button>
+                        </li>
+                        <li class="item">
+                          <button class="filter-depth2">
+                            <i class="icon-arrow"></i>
+                            <span class="text">Software Development</span>
+                          </button>
+                          <ul class="sub-list">
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">Frontend</span>
+                              </button>
+                            </li>
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">Android</span>
+                              </button>
+                            </li>
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">iOS</span>
+                              </button>
+                            </li>
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">Backend</span>
+                              </button>
+                            </li>
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">AI/ML</span>
+                              </button>
+                            </li>
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">Data Engineering</span>
+                              </button>
+                            </li>
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">Embedded SW</span>
+                              </button>
+                            </li>
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">Graphics</span>
+                              </button>
+                            </li>
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">공통</span>
+                              </button>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="item">
+                          <button class="filter-depth1">
+                            <i class="icon-arrow"></i>
+                            <span class="text">Hardware Development</span>
+                          </button>
+                          <ul class="sub-list">
+                            <li class="item">
+                              <button class="filter-depth2 filter-select">
+                                <span class="text">Hardware</span>
+                              </button>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="item">
+                          <button class="filter-depth1">
+                            <i class="icon-arrow"></i>
+                            <span class="text">Infra Engineering</span>
+                          </button>
+                          <ul class="sub-list">
+                            <li class="item">
+                              <button class="filter-depth2 filter-select">
+                                <span class="text">Infra Engineering</span>
+                              </button>
+                            </li>
+                            <li class="item">
+                              <button class="filter-depth2 filter-select">
+                                <span class="text">Data Center Engineering</span>
+                              </button>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="item">
+                          <button class="filter-depth1">
+                            <i class="icon-arrow"></i>
+                            <span class="text">Security</span>
+                          </button>
+                          <ul class="sub-list">
+                            <li class="item">
+                              <button class="filter-depth2 filter-select">
+                                <span class="text">Security</span>
+                              </button>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="item">
+                          <button class="filter-depth1">
+                            <i class="icon-arrow"></i>
+                            <span class="text">Tech Operations</span>
+                          </button>
+                          <ul class="sub-list">
+                            <li class="item">
+                              <button class="filter-depth2 filter-select">
+                                <span class="text">Tech Staff</span>
+                              </button>
+                            </li>
+                            <li class="item">
+                              <button class="filter-depth2 filter-select">
+                                <span class="text">QA</span>
+                              </button>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="item">
+                          <button class="filter-depth1">
+                            <i class="icon-arrow"></i>
+                            <span class="text">공통</span>
+                          </button>
+                          <ul class="sub-list">
+                            <li class="item">
+                              <button class="filter-depth2 filter-select">
+                                <span class="text">공통</span>
+                              </button>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="item">
+                      <button class="filter-depth1">
+                        <i class="icon-arrow"></i>
+                        <span class="text">Design</span>
+                      </button>
+                      <ul class="sub-list">
+                        <li class="item">
+                          <button class="filter-depth2 filter-select">
+                            <span class="text">전체</span>
+                          </button>
+                        </li>
+                        <li class="item">
+                          <button class="filter-depth2">
+                            <i class="icon-arrow"></i>
+                            <span class="text">Product Design</span>
+                          </button>
+                          <ul class="sub-list">
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">Product Design</span>
+                              </button>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="item">
+                          <button class="filter-depth2">
+                            <i class="icon-arrow"></i>
+                            <span class="text">Visual Comm. & Brand Design</span>
+                          </button>
+                          <ul class="sub-list">
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">Visual Comm. & Brand Design</span>
+                              </button>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="item">
+                          <button class="filter-depth2">
+                            <i class="icon-arrow"></i>
+                            <span class="text">Interactive Design</span>
+                          </button>
+                          <ul class="sub-list">
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">Interactive Design</span>
+                              </button>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="item">
+                          <button class="filter-depth2">
+                            <i class="icon-arrow"></i>
+                            <span class="text">Experience Insight & Planning</span>
+                          </button>
+                          <ul class="sub-list">
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">Experience Insight & Planning</span>
+                              </button>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="item">
+                          <button class="filter-depth2">
+                            <i class="icon-arrow"></i>
+                            <span class="text">Content Writing</span>
+                          </button>
+                          <ul class="sub-list">
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">Content Writing</span>
+                              </button>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="item">
+                          <button class="filter-depth2">
+                            <i class="icon-arrow"></i>
+                            <span class="text">공통</span>
+                          </button>
+                          <ul class="sub-list">
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">공통</span>
+                              </button>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="item">
+                      <button class="filter-depth1">
+                        <i class="icon-arrow"></i>
+                        <span class="text">Service & Business</span>
+                      </button>
+                      <ul class="sub-list">
+                        <li class="item">
+                          <button class="filter-depth2 filter-select">
+                            <span class="text">전체</span>
+                          </button>
+                        </li>
+                        <li class="item">
+                          <button class="filter-depth2">
+                            <i class="icon-arrow"></i>
+                            <span class="text">Product Development</span>
+                          </button>
+                          <ul class="sub-list">
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">Product Development</span>
+                              </button>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="item">
+                          <button class="filter-depth2">
+                            <i class="icon-arrow"></i>
+                            <span class="text">Content Development</span>
+                          </button>
+                          <ul class="sub-list">
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">Content Development</span>
+                              </button>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="item">
+                          <button class="filter-depth2">
+                            <i class="icon-arrow"></i>
+                            <span class="text">Business Development</span>
+                          </button>
+                          <ul class="sub-list">
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">Business Development</span>
+                              </button>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="item">
+                          <button class="filter-depth2">
+                            <i class="icon-arrow"></i>
+                            <span class="text">Trust&Safety</span>
+                          </button>
+                          <ul class="sub-list">
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">Trust&Safety</span>
+                              </button>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="item">
+                          <button class="filter-depth2">
+                            <i class="icon-arrow"></i>
+                            <span class="text">어카운트/세일즈</span>
+                          </button>
+                          <ul class="sub-list">
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">어카운트/세일즈</span>
+                              </button>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="item">
+                          <button class="filter-depth2">
+                            <i class="icon-arrow"></i>
+                            <span class="text">공통</span>
+                          </button>
+                          <ul class="sub-list">
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">공통</span>
+                              </button>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="item">
+                      <button class="filter-depth1">
+                        <i class="icon-arrow"></i>
+                        <span class="text">Corporate</span>
+                      </button>
+                      <ul class="sub-list">
+                        <li class="item">
+                          <button class="filter-depth2 filter-select">
+                            <span class="text">전체</span>
+                          </button>
+                        </li>
+                        <li class="item">
+                          <button class="filter-depth2">
+                            <i class="icon-arrow"></i>
+                            <span class="text">Marketing</span>
+                          </button>
+                          <ul class="sub-list">
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">Marketing</span>
+                              </button>
+                            </li>
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">Brand Planning</span>
+                              </button>
+                            </li>
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">Content Creative</span>
+                              </button>
+                            </li>
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">User Research & Data Insight</span>
+                              </button>
+                            </li>
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">Marketing 공통</span>
+                              </button>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="item">
+                          <button class="filter-depth2">
+                            <i class="icon-arrow"></i>
+                            <span class="text">Finance</span>
+                          </button>
+                          <ul class="sub-list">
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">재무기획</span>
+                              </button>
+                            </li>
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">회계</span>
+                              </button>
+                            </li>
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">세무</span>
+                              </button>
+                            </li>
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">자금</span>
+                              </button>
+                            </li>
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">Finance 공통</span>
+                              </button>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="item">
+                          <button class="filter-depth2">
+                            <i class="icon-arrow"></i>
+                            <span class="text">Service Infra</span>
+                          </button>
+                          <ul class="sub-list">
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">소싱</span>
+                              </button>
+                            </li>
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">운영관리</span>
+                              </button>
+                            </li>
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">빌링</span>
+                              </button>
+                            </li>
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">구매</span>
+                              </button>
+                            </li>
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">부동산</span>
+                              </button>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="item">
+                          <button class="filter-depth2">
+                            <i class="icon-arrow"></i>
+                            <span class="text">Partner Growth Support</span>
+                          </button>
+                          <ul class="sub-list">
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">Partner Growth Support</span>
+                              </button>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="item">
+                          <button class="filter-depth2">
+                            <i class="icon-arrow"></i>
+                            <span class="text">Corporate Development</span>
+                          </button>
+                          <ul class="sub-list">
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">투자</span>
+                              </button>
+                            </li>
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">Investor Relations</span>
+                              </button>
+                            </li>
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">Corporate Strategy</span>
+                              </button>
+                            </li>
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">ESG</span>
+                              </button>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="item">
+                          <button class="filter-depth2">
+                            <i class="icon-arrow"></i>
+                            <span class="text">Compliance</span>
+                          </button>
+                          <ul class="sub-list">
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">Risk Management</span>
+                              </button>
+                            </li>
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">내부감사</span>
+                              </button>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="item">
+                          <button class="filter-depth2">
+                            <i class="icon-arrow"></i>
+                            <span class="text">Legal</span>
+                          </button>
+                          <ul class="sub-list">
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">법무</span>
+                              </button>
+                            </li>
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">지식재산</span>
+                              </button>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="item">
+                          <button class="filter-depth2">
+                            <i class="icon-arrow"></i>
+                            <span class="text">Privacy</span>
+                          </button>
+                          <ul class="sub-list">
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">개인정보보호</span>
+                              </button>
+                            </li>
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">통신비밀보호</span>
+                              </button>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="item">
+                          <button class="filter-depth2">
+                            <i class="icon-arrow"></i>
+                            <span class="text">Communication</span>
+                          </button>
+                          <ul class="sub-list">
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">Strategic Communication</span>
+                              </button>
+                            </li>
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">산업및정책연구</span>
+                              </button>
+                            </li>
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">Corporate Experience</span>
+                              </button>
+                            </li>
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">Communication 공통</span>
+                              </button>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="item">
+                          <button class="filter-depth2">
+                            <i class="icon-arrow"></i>
+                            <span class="text">HR</span>
+                          </button>
+                          <ul class="sub-list">
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">Human Resources</span>
+                              </button>
+                            </li>
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">Employee Relations</span>
+                              </button>
+                            </li>
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">Talent Acquisition</span>
+                              </button>
+                            </li>
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">Culture Experience</span>
+                              </button>
+                            </li>
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">HR 공통</span>
+                              </button>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="item">
+                          <button class="filter-depth2">
+                            <i class="icon-arrow"></i>
+                            <span class="text">Assist</span>
+                          </button>
+                          <ul class="sub-list">
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">채용운영</span>
+                              </button>
+                            </li>
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">통번역</span>
+                              </button>
+                            </li>
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">비서</span>
+                              </button>
+                            </li>
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">기사</span>
+                              </button>
+                            </li>
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">Health Care</span>
+                              </button>
+                            </li>
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">운영지원</span>
+                              </button>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="item">
+                          <button class="filter-depth2">
+                            <i class="icon-arrow"></i>
+                            <span class="text">공통</span>
+                          </button>
+                          <ul class="sub-list">
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">공통</span>
+                              </button>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="item">
+                          <button class="filter-depth2">
+                            <i class="icon-arrow"></i>
+                            <span class="text">Shared Service</span>
+                          </button>
+                          <ul class="sub-list">
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">급여</span>
+                              </button>
+                            </li>
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">복리후생</span>
+                              </button>
+                            </li>
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">자산관리</span>
+                              </button>
+                            </li>
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">총무</span>
+                              </button>
+                            </li>
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">시설인프라</span>
+                              </button>
+                            </li>
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">공간운영</span>
+                              </button>
+                            </li>
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">시스템/안전</span>
+                              </button>
+                            </li>
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">재무지원</span>
+                              </button>
+                            </li>
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">구매</span>
+                              </button>
+                            </li>
+                            <li class="item">
+                              <button class="filter-depth3 filter-select">
+                                <span class="text">건축</span>
+                              </button>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="filter-box">
+                  <p class="title">고용형태</p>
+                  <ul class="filter-list">
+                    <li class="item">
+                      <button class="filter-depth1 filter-select">
+                        <span class="text">정규</span>
+                      </button>
+                    </li>
+                    <li class="item">
+                      <button class="filter-depth1 filter-select">
+                        <span class="text">계약</span>
+                      </button>
+                    </li>
+                    <li class="item">
+                      <button class="filter-depth1 filter-select">
+                        <span class="text">인턴</span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="filter-box">
+                  <p class="title">경력</p>
+                  <ul class="filter-list">
+                    <li class="item">
+                      <button class="filter-depth1 filter-select">
+                        <span class="text">신입</span>
+                      </button>
+                    </li>
+                    <li class="item">
+                      <button class="filter-depth1 filter-select">
+                        <span class="text">경력</span>
+                      </button>
+                    </li>
+                    <li class="item">
+                      <button class="filter-depth1 filter-select">
+                        <span class="text">무관</span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="filter-box">
+                  <p class="title">근무지</p>
+                  <ul class="filter-list">
+                    <li class="item">
+                      <button class="filter-depth1 filter-select">
+                        <span class="text">분당</span>
+                      </button>
+                    </li>
+                    <li class="item">
+                      <button class="filter-depth1 filter-select">
+                        <span class="text">서울</span>
+                      </button>
+                    </li>
+                    <li class="item">
+                      <button class="filter-depth1 filter-select">
+                        <span class="text">춘천</span>
+                      </button>
+                    </li>
+                    <li class="item">
+                      <button class="filter-depth1 filter-select">
+                        <span class="text">세종</span>
+                      </button>
+                    </li>
+                    <li class="item">
+                      <button class="filter-depth1 filter-select">
+                        <span class="text">글로벌</span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <button type="button" class="btn-clear">Clear filters</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="group-content">
+          <ul class="job-list">
+            <li class="job-item">
+              <a href="#" class="item">
+                <div class="inner">
+                  <div class="left-area">
+                    <span class="title">Tech</span>
+                    <span class="count">5</span>
+                  </div>
+                  <div class="right-area">
+                    <span class="text">다가오는 미래를 구현합니다</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="job-item">
+              <a href="#" class="item">
+                <div class="inner">
+                  <div class="left-area">
+                    <span class="title">Design</span>
+                    <span class="count">0</span>
+                  </div>
+                  <div class="right-area">
+                    <span class="text">경험을 설계합니다</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="job-item">
+              <a href="#" class="item">
+                <div class="inner">
+                  <div class="left-area">
+                    <span class="title">Service & Business</span>
+                    <span class="count">7</span>
+                  </div>
+                  <div class="right-area">
+                    <span class="text">일상을 풍요롭게 합니다</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="job-item">
+              <a href="#" class="item">
+                <div class="inner">
+                  <div class="left-area">
+                    <span class="title">Corporate</span>
+                    <span class="count">3</span>
+                  </div>
+                  <div class="right-area">
+                    <span class="text">네이버의 추진력을 만듭니다</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="sc-people">
+        <div class="inner">
+          <div class="group-head">
+            <h2 class="headline">People</h2>
+            <p class="sub-title">성장을 위한 가장 확실한 방법은 뛰어난 동료들 사이에 있는 것입니다</p>
+            <a href="#" class="btn-more">Learn more</a>
+          </div>
+          <div class="group-content swiper">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <a href="#" class="people-con">
+                  <div class="img-area">
+                    <img src="./assets/images/img_slide2_13.jpg" alt="NAVER 유강민님 이미지">
+                  </div>
+                  <div class="text-area">
+                    <span class="text-title">새로운 세상을 여는 기술</span>
+                    <a href="#" class="people-btn">Interview</a>
+                    <span class="people-text">
+                      <span class="people-company">NAVER Cloud</span>
+                      <span class="people-job">Tech</span>
+                      <span class="people-name">유강민</span>
+                    </span>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#" class="people-con">
+                  <div class="img-area">
+                    <img src="./assets/images/img_slide2_15.jpg" alt="NAVER 임정화님 이미지">
+                  </div>
+                  <div class="text-area">
+                    <span class="text-title">호기심을 잃지 않도록</span>
+                    <a href="#" class="people-btn">Interview</a>
+                    <span class="people-text">
+                      <span class="people-company">NAVER</span>
+                      <span class="people-job">Service & Business</span>
+                      <span class="people-name">임정화</span>
+                    </span>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#" class="people-con">
+                  <div class="img-area">
+                    <img src="./assets/images/img_slide2_16.jpg" alt="NAVER WEBTOON 정혁구님 이미지">
+                  </div>
+                  <div class="text-area">
+                    <span class="text-title">재미의 증폭</span>
+                    <a href="#" class="people-btn">Interview</a>
+                    <span class="people-text">
+                      <span class="people-company">NAVER WEBTOON</span>
+                      <span class="people-job">Design</span>
+                      <span class="people-name">정혁구</span>
+                    </span>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#" class="people-con">
+                  <div class="img-area">
+                    <img src="./assets/images/img_slide2_14.jpg" alt="SNOW 이근실님 이미지">
+                  </div>
+                  <div class="text-area">
+                    <span class="text-title">기술로 디자인하다</span>
+                    <a href="#" class="people-btn">Interview</a>
+                    <span class="people-text">
+                      <span class="people-company">SNOW</span>
+                      <span class="people-job">Design</span>
+                      <span class="people-name">이근실</span>
+                    </span>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#" class="people-con">
+                  <div class="img-area">
+                    <img src="./assets/images/img_slide2_8.jpg" alt="NAVER 권순태님 이미지">
+                  </div>
+                  <div class="text-area">
+                    <span class="text-title">마음을 사로잡는 방법</span>
+                    <a href="#" class="people-btn">Interview</a>
+                    <span class="people-text">
+                      <span class="people-company">NAVER</span>
+                      <span class="people-job">Corporate</span>
+                      <span class="people-name">권순태</span>
+                    </span>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#" class="people-con">
+                  <div class="img-area">
+                    <img src="./assets/images/img_slide2_9.jpg" alt="NAVER WEBTOON 이민선님 이미지">
+                  </div>
+                  <div class="text-area">
+                    <span class="text-title">성장의 조각을 찾기 위한 실험</span>
+                    <a href="#" class="people-btn">Interview</a>
+                    <span class="people-text">
+                      <span class="people-company">NAVER WEBTOON</span>
+                      <span class="people-job">Service & Business</span>
+                      <span class="people-name">이민선</span>
+                    </span>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#" class="people-con">
+                  <div class="img-area">
+                    <img src="./assets/images/img_slide2_10.jpg" alt="NAVER LABS 김수정님 이미지">
+                  </div>
+                  <div class="text-area">
+                    <span class="text-title">기술 그 이상의 의미</span>
+                    <a href="#" class="people-btn">Interview</a>
+                    <span class="people-text">
+                      <span class="people-company">NAVER LABS</span>
+                      <span class="people-job">Tech</span>
+                      <span class="people-name">김수정</span>
+                    </span>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#" class="people-con">
+                  <div class="img-area">
+                    <img src="./assets/images/img_slide2_11.jpg" alt="NAVER 조민형님 이미지">
+                  </div>
+                  <div class="text-area">
+                    <span class="text-title">애정이 책임이 될 때</span>
+                    <a href="#" class="people-btn">Interview</a>
+                    <span class="people-text">
+                      <span class="people-company">NAVER</span>
+                      <span class="people-job">Service & Business</span>
+                      <span class="people-name">조민형</span>
+                    </span>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#" class="people-con">
+                  <div class="img-area">
+                    <img src="./assets/images/img_slide2_12.jpg" alt="NAVER 김은진님 이미지">
+                  </div>
+                  <div class="text-area">
+                    <span class="text-title">가치를 디자인합니다</span>
+                    <a href="#" class="people-btn">Interview</a>
+                    <span class="people-text">
+                      <span class="people-company">NAVER</span>
+                      <span class="people-job">Design</span>
+                      <span class="people-name">김은진</span>
+                    </span>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#" class="people-con">
+                  <div class="img-area">
+                    <img src="./assets/images/img_slide2_1.jpg" alt="NAVER LABS 박경식님 이미지">
+                  </div>
+                  <div class="text-area">
+                    <span class="text-title">로봇을 만들기 위해 사람을 공부합니다</span>
+                    <a href="#" class="people-btn">Interview</a>
+                    <span class="people-text">
+                      <span class="people-company">NAVER LABS</span>
+                      <span class="people-job">Tech</span>
+                      <span class="people-name">박경식</span>
+                    </span>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#" class="people-con">
+                  <div class="img-area">
+                    <img src="./assets/images/img_slide2_3.jpg" alt="NAVER 고은경님 이미지">
+                  </div>
+                  <div class="text-area">
+                    <span class="text-title">성장의 화두를 만드는 일</span>
+                    <a href="#" class="people-btn">Interview</a>
+                    <span class="people-text">
+                      <span class="people-company">NAVER</span>
+                      <span class="people-job">Corporate</span>
+                      <span class="people-name">고은경</span>
+                    </span>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#" class="people-con">
+                  <div class="img-area">
+                    <img src="./assets/images/img_slide2_4.jpg" alt="NAVER 김도희님 이미지">
+                  </div>
+                  <div class="text-area">
+                    <span class="text-title">기술로 취향 저격</span>
+                    <a href="#" class="people-btn">Interview</a>
+                    <span class="people-text">
+                      <span class="people-company">NAVER</span>
+                      <span class="people-job">Tech</span>
+                      <span class="people-name">김도희</span>
+                    </span>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#" class="people-con">
+                  <div class="img-area">
+                    <img src="./assets/images/img_slide2_5.jpg" alt="NAVER 서명원 이미지">
+                  </div>
+                  <div class="text-area">
+                    <span class="text-title">실패를 감수하는 마음</span>
+                    <a href="#" class="people-btn">Interview</a>
+                    <span class="people-text">
+                      <span class="people-company">NAVER</span>
+                      <span class="people-job">Design</span>
+                      <span class="people-name">서명원</span>
+                    </span>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#" class="people-con">
+                  <div class="img-area">
+                    <img src="./assets/images/img_slide2_6.jpg" alt="NAVER FINANCIAL 김재홍님 이미지">
+                  </div>
+                  <div class="text-area">
+                    <span class="text-title">의미 있는 일을 하고 있다는 감각</span>
+                    <a href="#" class="people-btn">Interview</a>
+                    <span class="people-text">
+                      <span class="people-company">NAVER FINANCIAL</span>
+                      <span class="people-job">Service & Business</span>
+                      <span class="people-name">김재홍</span>
+                    </span>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#" class="people-con">
+                  <div class="img-area">
+                    <img src="./assets/images/img_slide2_7.jpg" alt="NAVER Z 채은석님, 심광섭님 이미지">
+                  </div>
+                  <div class="text-area">
+                    <span class="text-title">새로운 세계관을 구축하는 일</span>
+                    <a href="#" class="people-btn">Interview</a>
+                    <span class="people-text">
+                      <span class="people-company">NAVER Z</span>
+                      <span class="people-job">Service & Business</span>
+                      <span class="people-name">채은석, 심광섭</span>
+                    </span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <div class="swiper-control">
+              <button class="btn prev" aria-label="슬라이드 이전"></button>
+              <button class="btn next" aria-label="슬라이드 이후"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sc-benefits">
+        <div class="inner">
+          <div class="group-head">
+            <h2 class="headline">Benefits</h2>
+            <p class="sub-title">네이버의 일하는 문화는 계속 진화합니다</p>
+            <a href="#" class="btn-more">Learn more</a>
+          </div>
+          <div class="group-content swiper">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="img-area">
+                    <img src="./assets/images/img_01.png" alt="Financial Wellbeing 이미지">
+                  </div>
+                  <div class="text-area">
+                    <span class="text-title">Financial Wellbeing</span>
+                    <span class="text-text">
+                      회사의 미래가치와 성과를 함께 나누고,
+                      <br class="pc_block">
+                      생활의 안정을 지원합니다.
+                    </span>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="img-area">
+                    <img src="./assets/images/img_02.png" alt="Time & Refresh 이미지">
+                  </div>
+                  <div class="text-area">
+                    <span class="text-title">Time & Refresh</span>
+                    <span class="text-text">
+                      저마다 몰입할 수 있는 환경이 다름을 알기에
+                      <br class="pc_block">
+                      시간과 공간 선택의 자율성을 가지며,
+                      <br class="pc_block">
+                      리프레시를 위한 충전의 기회도 마련합니다.
+                    </span>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="img-area">
+                    <img src="./assets/images/img_03.png" alt="Work Space 이미지">
+                  </div>
+                  <div class="text-area">
+                    <span class="text-title">Work Space</span>
+                    <span class="text-text">
+                      공간이 우리에게 미치는 영향을 잘 알기에,
+                      <br class="pc_block">
+                      우리가 일할 공간을 직접 설계합니다.
+                    </span>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="img-area">
+                    <img src="./assets/images/img_04.png" alt="Work Tools 이미지">
+                  </div>
+                  <div class="text-area">
+                    <span class="text-title">Work Tools</span>
+                    <span class="text-text">
+                      최고의 퍼포먼스를 위해 최적의 장비를 지원합니다.
+                    </span>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="img-area">
+                    <img src="./assets/images/img_05.png" alt="Meal & Snack 이미지">
+                  </div>
+                  <div class="text-area">
+                    <span class="text-title">Meal & Snack</span>
+                    <span class="text-text">
+                      우리를 움직이는 에너지원이자, 동료들과의 대화를
+                      <br class="pc_block">
+                      이끌어 내는 음식을 풍성하게 제공합니다.
+                    </span>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="img-area">
+                    <img src="./assets/images/img_06.png" alt="Growth 이미지">
+                  </div>
+                  <div class="text-area">
+                    <span class="text-title">Growth</span>
+                    <span class="text-text">
+                      탁월함을 위한 성장의 노력들을 적극 지원하며,
+                      <br class="pc_block">
+                      회사와 함께 성장할 수 있는 기회를 만들어 갑니다.
+                    </span>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="img-area">
+                    <img src="./assets/images/img_07.png" alt="Wellness 이미지">
+                  </div>
+                  <div class="text-area">
+                    <span class="text-title">Wellness</span>
+                    <span class="text-text">
+                      몸과 마음이 건강할 때 온전히 발현될 수 있습니다.
+                      <br class="pc_block">
+                      예방부터 치료, 상담까지, 세심하게 케어합니다.
+                    </span>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="img-area">
+                    <img src="./assets/images/img_08.png" alt="Family 이미지">
+                  </div>
+                  <div class="text-area">
+                    <span class="text-title">Family</span>
+                    <span class="text-text">
+                      가족은 우리 모두의 든든한 지원군이자 안전망입니다.
+                      <br class="pc_block">
+                      이 안전망을 탄탄하게 뒷받침합니다.
+                    </span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <div class="swiper-control">
+              <button class="btn prev" aria-label="슬라이드 이전"></button>
+              <button class="btn next" aria-label="슬라이드 이후"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sc-support">
+        <div class="inner">
+          <div class="group-head">
+            <h2 class="support-headline">Board the Navership</h2>
+          </div>
+          <a href="#" class="support-more">
+            <span class="support-text">지원하기</span>
+            <i class="link-out">
+              <span class="blind">지원하기 링크 바로가기</span>
+            </i>
+          </a>
+        </div>
+      </section>
+    </main>
+    </div>
+    <footer id="footer">
+      <div class="inner">
+        <h2 class="foot-logo">
+          <a href="#" class="footer-logo-link">© NAVER Corp.</a>
+        </h2>
+        <address class="foot-info">
+          <span class="blind">NAVER Career 약관 및 정책</span>
+          <a href="#" class="info-link">개인정보 처리방침</a>
+        </address>
+        <div class="foot-family">
+            <button class="family-btn">관련 사이트</button>
+            <div class="family-wrap">
+              <ul class="family-list">
+                <li class="family-item">
+                  <a href="#" class="family-link">NAVER DIARY</a>
+                </li>
+                <li class="family-item">
+                  <a href="#" class="family-link">PLAY NAVER</a>
+                </li>
+                <li class="family-item">
+                  <a href="#" class="family-link">NAVER CODE</a>
+                </li>
+                <li class="family-item">
+                  <a href="#" class="family-link">CH. TECH</a>
+                </li>
+                <li class="family-item">
+                  <a href="#" class="family-link">NAVER D2</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+        <div class="foot-company">
+          <div class="company-wrap">
+            <span class="company">
+              <a href="#">NAVER Cloud</a>
+            </span>
+            <span class="company">
+              <a href="#">SNOW</a>
+            </span>
+            <span class="company">
+              <a href="#">NAVER LABS</a>
+            </span>
+            <span class="company">
+              <a href="#">NAVER WEBTOON</a>
+            </span>
+            <span class="company">
+              <a href="#">NAVER FINANCIAL</a>
+            </span>
+            <span class="company">
+              <a href="#">NAVER I&S</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
